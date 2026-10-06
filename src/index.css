@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-pixel {
+    font-family: 'Silkscreen', 'VT323', monospace;
+  }
+  .font-minecraft {
+    font-family: 'VT323', monospace;
+  }
+  .font-heading {
+    font-family: 'Chakra Petch', sans-serif;
+  }
+  .pixelated {
+    image-rendering: pixelated;
+  }
+}
+
+/* Custom Minecraft UI styling */
+.mc-button {
+  background: linear-gradient(180deg, #7c7c7c 0%, #4a4a4a 100%);
+  border-top: 3px solid #b4b4b4;
+  border-left: 3px solid #b4b4b4;
+  border-right: 3px solid #222222;
+  border-bottom: 3px solid #222222;
+  text-shadow: 2px 2px 0px #000;
+  box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.2);
+  transition: all 0.08s ease;
+}
+
+.mc-button:hover:not(:disabled) {
+  background: linear-gradient(180deg, #8f8f8f 0%, #5c5c5c 100%);
+}
+
+.mc-button:active:not(:disabled) {
+  border-top: 3px solid #222222;
+  border-left: 3px solid #222222;
+  border-right: 3px solid #b4b4b4;
+  border-bottom: 3px solid #b4b4b4;
+  background: #3a3a3a;
+  transform: translateY(1px);
+}
+
+.mc-button-green {
+  background: linear-gradient(180deg, #2e9134 0%, #1c5e21 100%);
+  border-top: 3px solid #55c75c;
+  border-left: 3px solid #55c75c;
+  border-right: 3px solid #0e3011;
+  border-bottom: 3px solid #0e3011;
+  text-shadow: 2px 2px 0px #000;
+}
+
+.mc-button-green:hover:not(:disabled) {
+  background: linear-gradient(180deg, #38ad3f 0%, #24752a 100%);
+}
+
+.mc-button-red {
+  background: linear-gradient(180deg, #b92b27 0%, #70110e 100%);
+  border-top: 3px solid #f0504d;
+  border-left: 3px solid #f0504d;
+  border-right: 3px solid #3d0705;
+  border-bottom: 3px solid #3d0705;
+  text-shadow: 2px 2px 0px #000;
+}
+
+.mc-button-gold {
+  background: linear-gradient(180deg, #e5a712 0%, #996e05 100%);
+  border-top: 3px solid #fed86f;
+  border-left: 3px solid #fed86f;
+  border-right: 3px solid #533a00;
+  border-bottom: 3px solid #533a00;
+  text-shadow: 2px 2px 0px #000;
+}
+
+.mc-panel {
+  background: #2b2622;
+  border: 4px solid #14110f;
+  box-shadow: inset 2px 2px 0px rgba(255, 255, 255, 0.08), inset -2px -2px 0px rgba(0, 0, 0, 0.4);
+}
+
+.mc-slot {
+  background: #8b8b8b;
+  border-top: 2px solid #373737;
+  border-left: 2px solid #373737;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.mc-slot-selected {
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1e1b18;
+}
+::-webkit-scrollbar-thumb {
+  background: #504840;
+  border: 1px solid #14110f;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #73675c;
+}

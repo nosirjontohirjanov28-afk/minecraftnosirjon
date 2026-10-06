@@ -1,0 +1,6 @@
+{
+  "name": "Minecraft Master - 3D Sandbox & Horror Mods",
+  "description": "Jonli 3D Minecraft Master launcher va o'yini: Multiplayer va yakkaxon serverlar, dahshatli horror modlar (Herobrine, Cave Dweller, Man From Fog) va maxsus qobiliyatli modlar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
